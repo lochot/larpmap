@@ -6,7 +6,7 @@ window.addEventListener('load', () => {
         //const today = new Date();
         //const time = today.getHours() + ":" + today.getMinutes();
 
-        WA.room.onEnterLayer('panneauZone', () => {
+        WA.room.onEnterZone('panneauZone', () => {
             console.log('toto');
             currentPopup =  WA.ui.openPopup("textPanneauZone","Vous lisez un panneau", [{
                 label: "Fermer",
@@ -18,7 +18,7 @@ window.addEventListener('load', () => {
             }]);
         });
 
-        WA.room.onLeaveLayer('panneauZone', () => {subscribe(closePopUp);});
+        WA.room.onLeaveZone('panneauZone', () => {subscribe(closePopUp);});
 
         function closePopUp(){
             if (currentPopup !== undefined) {
