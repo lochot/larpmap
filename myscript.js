@@ -1,6 +1,6 @@
 console.log('ici on voit si ça marche');
 WA.onInit().then(() => {
-    console.log('WA intiated');
+    console.log('WA intiated for player : '+WA.player.name);
 WA.sendChatMessage('Bienvenue sur le marché https://larp-place.com !', 'Informations');
 WA.chat.sendChatMessage('promenez vous et n\'hésitez pas à discuter avec les artisans', 'Informations');
 WA.chat.sendChatMessage('Si vous avez besoin d\'aide, tapez !aide', 'Informations');
