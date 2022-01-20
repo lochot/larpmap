@@ -1,9 +1,36 @@
-console.log('ici on voit si ça marche');
-WA.onInit().then(() => {
-    console.log('WA intiated for player : '+WA.player.name);
-WA.sendChatMessage('Bienvenue sur le marché https://larp-place.com !', 'Informations');
-WA.chat.sendChatMessage('promenez vous et n\'hésitez pas à discuter avec les artisans', 'Informations');
-WA.chat.sendChatMessage('Si vous avez besoin d\'aide, tapez !aide', 'Informations');
+window.addEventListener('load', () => {
+    console.log('ici on voit si ça marche');
+    WA.onInit().then(() => {
+        console.log('WA intiated for player : '+WA.player.name);
+        let currentPopup;
+        //const today = new Date();
+        //const time = today.getHours() + ":" + today.getMinutes();
+
+        WA.room.onEnterLayer('panneauZone', () => {
+            console.log('toto');
+            currentPopup =  WA.ui.openPopup("textPanneauZone","Vous lisez un panneau", [{
+                label: "Fermer",
+                className: "primary",
+                callback: (popup) => {
+                    // Close the popup when the "Close" button is pressed.
+                    popup.close();
+                }
+            }]);
+        });
+
+        WA.room.onLeaveLayer('panneauZone', () => {subscribe(closePopUp);});
+
+        function closePopUp(){
+            if (currentPopup !== undefined) {
+                currentPopup.close();
+                currentPopup = undefined;
+            }
+        }
+
+        WA.chat.sendChatMessage('Bienvenue sur le marché https://larp-place.com !', 'Informations');
+        WA.chat.sendChatMessage('promenez vous et n\'hésitez pas à discuter avec les artisans', 'Informations');
+        WA.chat.sendChatMessage('Si vous avez besoin d\'aide, tapez !aide', 'Informations');
+    });
 });
 /*window.addEventListener('load', () => {
     WA.onInit().then(() => {
