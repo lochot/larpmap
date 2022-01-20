@@ -1,4 +1,8 @@
-window.addEventListener('load', () => {
+WA.chat.sendChatMessage('Bienvenue sur le marché https://larp-place.com !', 'Informations');
+WA.chat.sendChatMessage('promenez vous et n\'hésitez pas à discuter avec les artisans', 'Informations');
+WA.chat.sendChatMessage('Si vous avez besoin d\'aide, tapez !aide', 'Informations');
+
+/*window.addEventListener('load', () => {
     WA.onInit().then(() => {
         WA.chat.sendChatMessage('Bonjour '+WA.player.name, 'Informations');
         WA.chat.sendChatMessage('Bienvenue sur le marché https://larp-place.com !', 'Informations');
@@ -42,4 +46,4 @@ window.addEventListener('load', () => {
                 }
             }
     });
-});
+});*/
