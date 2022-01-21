@@ -20,14 +20,7 @@ window.addEventListener('load', () => {
         let currentPopup;
             //const today = new Date();
             //const time = today.getHours() + ":" + today.getMinutes();
-            currentPopup =  WA.ui.openPopup("textPanneauZone","Vous lisez un panneau", [{
-                label: "Fermer",
-                className: "primary",
-                callback: (popup) => {
-                    // Close the popup when the "Close" button is pressed.
-                    popup.close();
-                }
-            }]);
+
             WA.room.onEnterLayer('panneauZone').subscribe(() => {
                 console.log('toto');
                 currentPopup =  WA.ui.openPopup("textPanneauZone","Vous lisez un panneau", [{
