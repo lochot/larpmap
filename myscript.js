@@ -21,7 +21,7 @@ window.addEventListener('load', () => {
             //const today = new Date();
             //const time = today.getHours() + ":" + today.getMinutes();
 
-            WA.room.onEnterLayer('panneauZone').subscribe(() => {
+            WA.room.onEnterLayer('doss-mobile/panneaux/panneauZone').subscribe(() => {
                 console.log('toto');
                 currentPopup =  WA.ui.openPopup("textPanneauZone","Vous lisez un panneau", [{
                     label: "Fermer",
@@ -33,7 +33,7 @@ window.addEventListener('load', () => {
                 }]);
             });
 
-            WA.room.onLeaveLayer('panneauZone').subscribe(closePopUp);
+            WA.room.onLeaveLayer('doss-mobile/panneaux/panneauZone').subscribe(closePopUp);
 
             function closePopUp(){
                 if (currentPopup !== undefined) {
