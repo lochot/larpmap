@@ -23,7 +23,14 @@ window.addEventListener('load', () => {
 
             WA.room.onEnterLayer('panneauZone').subscribe(() => {
                 console.log('toto');
-                currentPopup =  WA.ui.openPopup("textPanneauZone","Vous lisez un panneau");
+                currentPopup =  WA.ui.openPopup("textPanneauZone","Vous lisez un panneau", [{
+        label: "Close",
+        className: "primary",
+        callback: (popup) => {
+            // Close the popup when the "Close" button is pressed.
+            popup.close();
+        }
+    }]);
             });
 
             WA.room.onLeaveLayer('panneauZone').subscribe(closePopUp);
