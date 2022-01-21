@@ -313,28 +313,17 @@
                  "width":93.7162209047986,
                  "x":113.252658731954,
                  "y":34.0269116471316
-                }],
-         "opacity":1,
-         "type":"objectgroup",
-         "visible":true,
-         "x":0,
-         "y":0
-        }, 
-        {
-         "draworder":"topdown",
-         "id":83,
-         "name":"panneau",
-         "objects":[
+                }, 
                 {
                  "height":293,
-                 "id":13,
+                 "id":14,
                  "name":"textPanneauZone",
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":375,
-                 "x":39,
-                 "y":63
+                 "x":28.5,
+                 "y":50.5
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -367,7 +356,7 @@
          "y":0
         }],
  "nextlayerid":84,
- "nextobjectid":14,
+ "nextobjectid":15,
  "orientation":"orthogonal",
  "properties":[
         {
