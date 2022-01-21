@@ -160,6 +160,12 @@
                          "id":82,
                          "name":"panneauZone",
                          "opacity":1,
+                         "properties":[
+                                {
+                                 "name":"zone",
+                                 "type":"string",
+                                 "value":"panneau"
+                                }],
                          "type":"tilelayer",
                          "visible":true,
                          "width":100,
