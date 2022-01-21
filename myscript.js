@@ -23,7 +23,7 @@ window.addEventListener('load', () => {
 
             WA.room.onEnterLayer('panneauZone').subscribe(() => {
                 console.log('toto');
-                currentPopup =  WA.ui.openPopup("textPanneauZone","Vous lisez un panneau", [{
+                currentPopup =  WA.ui.openPopup("textPanneauZone","<b>Vous lisez un panneau</b>", [{
                     label: "Fermer",
                     className: "primary",
                     callback: (popup) => {
