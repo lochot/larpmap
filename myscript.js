@@ -1,4 +1,5 @@
 window.addEventListener('load', () => {
+
     WA.onInit().then(() => {
         WA.chat.sendChatMessage('Bonjour '+WA.player.name, 'Informations');
         WA.chat.sendChatMessage('Bienvenue sur le marché https://larp-place.com !', 'Informations');
@@ -15,8 +16,6 @@ window.addEventListener('load', () => {
             }
         }
 
-
-
         let currentPopup;
             //const today = new Date();
             //const time = today.getHours() + ":" + today.getMinutes();
@@ -32,9 +31,21 @@ window.addEventListener('load', () => {
                     }
                 }]);
             });
-
             WA.room.onLeaveLayer('doss-mobile/panneaux/panneauZone').subscribe(closePopUp);
 
+            WA.room.onEnterLayer('pnjs/pnjaccueil').subscribe(() => {
+                console.log('toto');
+                currentPopup =  WA.ui.openPopup("pnjaccueil","Salut, je suis un pnj, est ce que je peux interragir dans les panneaux ? Aucune idée, Lochot travaille dessus.", [{
+                    label: "Fermer",
+                    className: "primary",
+                    callback: (popup) => {
+                        // Close the popup when the "Close" button is pressed.
+                        popup.close();
+                    }
+                }]);
+            });
+            WA.room.onLeaveLayer('pnjs/pnjaccueil').subscribe(closePopUp);
+                        
             function closePopUp(){
                 if (currentPopup !== undefined) {
                     currentPopup.close();
@@ -42,4 +53,27 @@ window.addEventListener('load', () => {
                 }
             }
     });
+/*
+    function myMap(){
+        console.log('afficheMap');
+        var parentDoc = window;
+        while(parentDoc !== parentDoc.parent)
+            {
+                parentDoc = parentDoc.parent;
+            }
+        parentDoc = parentDoc.document;
+            let mycontain = parentDoc.getElementById('game');
+            let mypop = document.createElement('div');
+            mypop.id = 'mymap';
+            mypop.className= 'mymap';
+            mypop.style.position = 'absolute';
+            mypop.style.top = '0px';
+            mypop.style.right = '0px';
+            mypop.style.width = '30%';
+            mypop.style.height = '30%';
+            mypop.style.background = 'blue';
+            mycontain.appendChild(mypop);
+        console.log('fin');
+    }
+    myMap();*/
 });
