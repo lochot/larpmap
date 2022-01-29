@@ -1,5 +1,9 @@
+import { bootstrapExtra } from "./node_modules/@workadventure/scripting-api-extra";
+
 window.addEventListener('load', () => {
     WA.onInit().then(() => {
+        //import { bootstrapExtra } from "https://unpkg.com/@workadventure/scripting-api-extra@^1/dist/bundle.js";
+        bootstrapExtra();
         //dl script from presta
         let currentPopup;
         //var params = 'map=maptest';
