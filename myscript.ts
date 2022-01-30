@@ -1,12 +1,12 @@
-//import { bootstrapExtra } from "./node_modules/@workadventure/scripting-api-extra";
-
+import { Popup } from "@workadventure/iframe-api-typings/Api/iframe/Ui/Popup";
+import { bootstrapExtra } from "./node_modules/@workadventure/scripting-api-extra";
 
 window.addEventListener('load', () => {
     WA.onInit().then(() => {
         //import { bootstrapExtra } from "https://unpkg.com/@workadventure/scripting-api-extra@^1/dist/bundle.js";
-        //bootstrapExtra();
+        bootstrapExtra();
         //dl script from presta
-        let currentPopup;
+        let currentPopup: Popup | undefined;
         //var params = 'map=maptest';
         var params = "json_name=" + JSON.stringify({"map":"maptest"});
         //JSON.stringify({ "email": "hello@user.com", "response": { "name": "Tester" } })
@@ -14,7 +14,7 @@ window.addEventListener('load', () => {
         xhr.onreadystatechange = function(){
             if (xhr.readyState === 4){
                 var retour = JSON.parse(xhr.responseText);
-                retour.infos.forEach(e => {
+                retour.infos.forEach((e: { panelname: string; zonename: string; texte: string; }) => {
                     console.log(e.panelname);
                     WA.room.onEnterLayer(e.zonename).subscribe(() => {
                         console.log('toto');
@@ -44,7 +44,7 @@ window.addEventListener('load', () => {
 
         WA.chat.onChatMessage(parseChat);
 
-        function parseChat(message) {
+        function parseChat(message: string) {
             //if (!crewAwaitAnswer) return;
                 var l_msg = message.toLowerCase();
             if (l_msg.includes('!aide')) {
