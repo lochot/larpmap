@@ -1306,6 +1306,28 @@
                  "width":0,
                  "x":206.833333333333,
                  "y":409.5
+                }, 
+                {
+                 "height":5,
+                 "id":28,
+                 "name":"scriptadd",
+                 "properties":[
+                        {
+                         "name":"allowApi",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"url",
+                         "type":"string",
+                         "value":"https:\/\/larp-place.com\/wa\/script.html"
+                        }],
+                 "rotation":0,
+                 "type":"website",
+                 "visible":true,
+                 "width":4.5,
+                 "x":8.25,
+                 "y":5.33333333333333
                 }],
          "offsetx":1.5,
          "offsety":7.5,
@@ -1364,7 +1386,7 @@
          "y":0
         }],
  "nextlayerid":160,
- "nextobjectid":28,
+ "nextobjectid":29,
  "orientation":"orthogonal",
  "properties":[
         {
@@ -1395,7 +1417,7 @@
         {
          "name":"script",
          "type":"string",
-         "value":"myscript.js"
+         "value":"https:\/\/unpkg.com\/@workadventure\/scripting-api-extra@^1\/dist\/bundle.js"
         }],
  "renderorder":"right-down",
  "tiledversion":"1.7.2",
