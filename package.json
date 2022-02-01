@@ -5,7 +5,7 @@
   "license": "MIT",
   "devDependencies": {
     "@workadventure/iframe-api-typings": "^1.7.2",
-    "@workadventure/scripting-api-extra": "^1.2.2",
+    "@workadventure/scripting-api-extra": "^1.2.0",
     "eslint": "^7.24.0",
     "html-webpack-plugin": "^5.3.2",
     "ts-loader": "^9.2.5",
@@ -24,5 +24,7 @@
     "lint": "node_modules/.bin/eslint src/ . --ext .ts",
     "fix": "node_modules/.bin/eslint --fix src/ . --ext .ts"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@workadventure/scripting-api-extra": "^1.2.0"
+  }
 }
