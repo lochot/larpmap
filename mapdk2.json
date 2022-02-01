@@ -1283,7 +1283,7 @@
                         {
                          "name":"closeLayer",
                          "type":"string",
-                         "value":"grille01c"
+                         "value":"global\/porte\/grille01c"
                         }, 
                         {
                          "name":"default",
@@ -1298,7 +1298,7 @@
                         {
                          "name":"openLayer",
                          "type":"string",
-                         "value":"grille01o"
+                         "value":"global\/porte\/grille01o"
                         }],
                  "rotation":0,
                  "type":"variable",
