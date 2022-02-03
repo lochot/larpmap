@@ -135,7 +135,7 @@
         {
          "draworder":"topdown",
          "id":4,
-         "name":"floorlayer",
+         "name":"floorLayer",
          "objects":[
                 {
                  "height":147.333333333333,
