@@ -2956,6 +2956,23 @@
                  "width":0,
                  "x":895,
                  "y":1499
+                }, 
+                {
+                 "height":512,
+                 "id":58,
+                 "name":"coliseeZoom",
+                 "properties":[
+                        {
+                         "name":"focusable",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"zone",
+                 "visible":true,
+                 "width":403.333333333333,
+                 "x":519.166666666667,
+                 "y":1499.16666666667
                 }],
          "offsetx":1.5,
          "offsety":7.5,
@@ -3014,7 +3031,7 @@
          "y":0
         }],
  "nextlayerid":231,
- "nextobjectid":58,
+ "nextobjectid":59,
  "orientation":"orthogonal",
  "properties":[
         {
