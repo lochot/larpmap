@@ -4337,6 +4337,19 @@
                         }]
                 }],
          "tilewidth":32
+        }, 
+        {
+         "columns":4,
+         "firstgid":5056,
+         "image":"src\/assets\/wastuffs\/countdown-wa-cinema.gif",
+         "imageheight":78,
+         "imagewidth":148,
+         "margin":0,
+         "name":"countdown-wa-cinema",
+         "spacing":0,
+         "tilecount":8,
+         "tileheight":32,
+         "tilewidth":32
         }],
  "tilewidth":32,
  "type":"map",
