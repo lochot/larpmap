@@ -40,7 +40,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"map.json"
+                 "value":"map.json#sortieLaby"
                 }],
          "type":"tilelayer",
          "visible":true,
