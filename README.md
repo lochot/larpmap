@@ -1,32 +1,23 @@
-# WorkAdventure Map Starter Kit
+# Larp Place Hub
 
-This is a starter kit to help you build your own map for [WorkAdventure](https://workadventu.re).
+Le Hub larp place, si cela vous plait dites le nous !
 
-To understand how to use this starter kit, follow the tutorial at [https://workadventu.re/map-building](https://workadventu.re/map-building).
+Voici l'entrée du hub dans lequel vous pourrez découvrir : 
+ - Des zones artisan
+ - Des mini quêtes
+ - Des salles de conférence visio
+ - Discuter avec les autres visiteurs
 
 ![map](./map.png)
 
-## Installation
+## Accès
 
-With npm installed (comes with [node](https://nodejs.org/en/)), run the following commands into a terminal in the root directory of this project:
+Rejoignez nous sur le [Hub](https://event.larp-place.com/) et discutez avec nous de ce projet
 
-```shell
-npm install
-npm run start
-```
+## Pour qui ?
 
-The project will run at http://localhost:8080/
+Le meta larp est ouvert à tous les gnistes qui souhaitent découvrir des artisans ou encore d'autres joueurs
 
-## Licenses
+## Par qui ?
 
-This project contains multiple licenses:
-
-* [Code license](./LICENSE.code) *(all files except those for other licenses)*
-* [Map license](./LICENSE.map) *(`map.json` and the map visual as well)*
-* [Assets license](./LICENSE.assets) *(the files inside the `src/assets/` folder)*
-
-### About third party assets
-
-If you add third party assets in your map, do not forget to:
-1. Credit the author and license with the "tilesetCopyright" property present in the properties of each tilesets in the `map.json` file
-2. Add the license text in LICENSE.assets
+L'équipe derrière ce projet est l'équipe de [larp place](https://www.larp-place.com), le market place des artisans du GN
