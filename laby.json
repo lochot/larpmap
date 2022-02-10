@@ -353,7 +353,7 @@
  "tilesets":[
         {
          "firstgid":1,
-         "source":"item01.tsx"
+         "source":"item01.json"
         }, 
         {
          "columns":6,
