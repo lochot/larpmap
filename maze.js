@@ -1,7 +1,6 @@
 window.addEventListener('load', () => {
 
     WA.onInit().then(() => {
-        let layerVisibility = true;
         WA.controls.disablePlayerControls();
         let state = true;
         WA.chat.sendChatMessage('Veuillez patienter pendant la generation du labyrinthe...', 'Aide');
