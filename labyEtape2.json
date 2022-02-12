@@ -234,6 +234,12 @@
          "id":22,
          "name":"P4",
          "opacity":1,
+         "properties":[
+                {
+                 "name":"startLayer",
+                 "type":"bool",
+                 "value":true
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":80,
@@ -266,9 +272,9 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"startLayer",
-                 "type":"bool",
-                 "value":true
+                 "name":"exitUrl",
+                 "type":"string",
+                 "value":"labyFinal.json"
                 }],
          "type":"tilelayer",
          "visible":true,
