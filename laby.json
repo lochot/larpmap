@@ -303,7 +303,7 @@
          "name":"black",
          "opacity":1,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":100,
          "x":0,
          "y":0
@@ -370,15 +370,6 @@
                          "name":"name",
                          "type":"string",
                          "value":"black"
-                        }]
-                }, 
-                {
-                 "id":7,
-                 "properties":[
-                        {
-                         "name":"exitUrl",
-                         "type":"string",
-                         "value":"map.json"
                         }]
                 }],
          "tilewidth":32
