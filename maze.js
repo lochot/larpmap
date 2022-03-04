@@ -24,7 +24,7 @@ window.addEventListener('load', () => {
             let tiled = [
                 
                 ];
-                for(let i = 3; i < 5; i++) {
+                /*for(let i = 3; i < 5; i++) {
                     for(let j = 0; j <= i; j++) {    
                         tiled.push(
                                 {x: x + i, y: y + j, tile: 'black', layer: 'black'},
@@ -37,7 +37,7 @@ window.addEventListener('load', () => {
                                 {x: x - j, y: y - i, tile: 'black', layer: 'black'}
                         );
                     }
-                }
+                }*/
                 tiled.push(
                         {x: x,     y: y,     tile: null, layer: 'black'},
                         {x: x + 1, y: y,     tile: null, layer: 'black'},
